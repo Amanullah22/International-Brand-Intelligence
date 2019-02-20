@@ -1,0 +1,826 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>IBI-International Brand Intelligence</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+
+  <!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+	
+	<!-- Libraries CSS Files -->
+	<link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="lib/animate/animate.min.css" rel="stylesheet">
+	<link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+	<link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+	<link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+	<link href="path/to/lightbox.css" rel="stylesheet">
+
+	<link href="https://www.cssscript.com/wp-includes/css/sticky.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="images/favicon.png">
+
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+	<link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	<style>
+	::-webkit-scrollbar { 
+    display: none; 
+}
+
+#menu {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 31%;
+    top: 65%;
+    list-style: none;
+    font-size: 200%;
+}
+
+@media screen and (max-width: 667px) {
+#menu {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 31%;
+    top: 67%;
+	bottom:2%;
+    list-style: none;
+    font-size: 200%;
+}
+}
+
+.menu-button {
+    opacity: 0;
+    z-index: -1;
+}
+
+.menu-button {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 50%;
+    background: #0013FF;;
+    background-size: 100%;
+    overflow: hidden;
+    text-decoration: none;
+    line-height: 0px;
+	padding:8px;
+    color: #fff;
+	border:2px solid #FFB600;
+}
+
+.menu-button:hover{
+	color: #FFB600;
+}
+
+#menu:not(:target)>a:first-of-type,
+#menu:target>a:last-of-type {
+    opacity: 1;
+    z-index: 1;
+}
+
+#menu:not(:target)>.icon-plus:before,
+#menu:target>.icon-minus:before {
+    opacity: 1;
+}
+
+.menu-item {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    line-height: 0px;
+    top: 50%;
+    border-radius: 50%;
+    background-color: #0013FF;
+	border:2px solid #FFB600;
+    transform: translate(0px, 0px);
+    transition: transform 500ms;
+    z-index: -2;
+    transition: .5s;
+}
+
+.menu-item:hover{
+opacity: 0.5;
+  box-shadow: 0 5px 10px #0013FF;
+}
+
+
+.menu-item a {
+     color: #FFB600;
+    position: relative;
+    top: 20%;
+    left: 19%;
+    text-decoration: none;
+}
+
+#menu:target>.menu-item:nth-child(6) {
+    transform: rotate(60deg) translateY(-80px) rotate(300deg);
+    transition-delay: 0s;
+}
+
+#menu:target>.menu-item:nth-child(5) {
+    transform: rotate(20deg) translateY(-85px) rotate(-20deg);
+    transition-delay: 0.1s;
+}
+
+#menu:target>.menu-item:nth-child(3) {
+    transform: rotate(-20deg) translateY(-85px) rotate(20deg);
+    transition-delay: 0.2s;
+}
+
+#menu:target>.menu-item:nth-child(4) {
+    transform: rotate(-60deg) translateY(-80px) rotate(60deg);
+    transition-delay: 0.3s;
+}
+
+.content{
+  position: absolute;
+  text-align: center;
+  margin: -10px 0 0 -30px;
+  top: 70%;
+  left: 50%;
+  font-size: 20px;
+}
+	</style>
+	</head>
+	<body>
+	<div id="colorlib-page">
+		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+		<aside id="colorlib-aside" style="background-color:#F4F6F6;" role="complementary" class="border js-fullheight">
+			<a href="index.html"><img id="logo" src="images/logo_final.png"/></a>
+			<nav id="colorlib-main-menu" role="navigation">
+				<ul>
+					<li class="colorlib-active"><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="services.html">Services</a></li>
+					<li><a href="reach.html">Reach</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+			
+			<div class="container">
+     <ul id="menu">
+            <a class="menu-button" href="#menu" title="Expand Sharing "><span class="fas fa-share-alt"></span></a>
+            <a style="color:#FFB600;" class="menu-button" href="#0" title="Contract Sharing"><span class="fas fa-share-alt"></span></a>
+            <li class="menu-item">
+                <a href="#menu" title="Facebook">
+                    <span class="fab fa-facebook"></span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="#menu" title="Twitter">
+                    <span class="fab fa-twitter"></span>
+                </a>
+            </li>
+			<li class="menu-item">
+                <a href="#menu" title="LinkedIn">
+                    <span class="fab fa-linkedin-in"></span>
+                </a>
+            </li>
+			<li class="menu-item">
+                <a href="#menu" title="Google Plus">
+                    <span class="fab fa-google-plus"></span>
+                </a>
+            </li>
+        </ul>
+
+</div>
+
+			<div class="colorlib-footer">
+				<p><small><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved to <font style="color:#A93226;font-weight:bold;">International Brand Intelligence.</font> Designed by <a href="portfolio.html">IBI Creative.</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. </span> <span>Demo Images: <a href="http://nothingtochance.co/" target="_blank">nothingtochance.co</a></span> --> </small></p>
+				<!-- <ul>
+					<li><a href="#"><i class="icon-facebook2"></i></a></li>
+					<li><a href="#"><i class="icon-twitter2"></i></a></li>
+					<li><a href="#"><i class="icon-instagram"></i></a></li>
+					<li><a href="#"><i class="icon-linkedin2"></i></a></li>
+				</ul> -->
+			</div>
+
+		</aside>
+
+		<div id="colorlib-main">
+			<aside id="colorlib-hero" class="js-fullheight">
+				<div class="flexslider js-fullheight">
+					<ul class="slides">
+				   	<li style="background-image: url(images/pic2.jpg);filter:grayscale(100%);">
+				   		<div class="overlay"></div>
+				   		<div class="container-fluid">
+				   			<div class="row">
+					   			<div class="col-md-8 col-md-offset-4 col-md-pull-2 js-fullheight slider-text">
+					   				<div class="slider-text-inner">
+					   					<div class="desc">
+						   					<h1 style="color:black;">VISION</h1>
+						   					<h2 style="color:black">Develop Client's Brand Globally.</h2>
+												<!-- <p><a class="btn btn-primary btn-learn">Learn More<i class="icon-arrow-right3"></i></a></p> -->
+										</div>
+					   				</div>
+					   			</div>
+					   		</div>
+				   		</div>
+				   	</li>
+				   	<li style="background-image: url(images/car-6.jpg);filter:grayscale(100%);">
+				   		<div class="overlay"></div>
+				   		<div class="container-fluid">
+				   			<div class="row">
+					   			<div class="col-md-8 col-md-offset-4 col-md-pull-2 js-fullheight slider-text">
+					   				<div class="slider-text-inner">
+					   					<div class="desc">
+						   					<h1 style="color:black">MISSION</h1>
+												<h2 style="color:black">Deliver innovative Idea to Clients for their Brand Development, Globally.</h2>
+												<!-- <p><a class="btn btn-primary btn-learn">Learn More<i class="icon-arrow-right3"></i></a></p> -->
+											</div>
+					   				</div>
+					   			</div>
+					   		</div>
+				   		</div>
+				   	</li>
+				   	<li style="background-image: url(images/Picture5_ed.jpg);">
+				   		<div class="overlay"></div>
+				   		<div class="container-fluid">
+				   			<div class="row">
+					   			<div class="col-md-8 col-md-offset-4 col-md-pull-2 js-fullheight slider-text">
+					   				<div class="slider-text-inner">
+					   					<div class="desc">
+						   					<h1 style="color:black">CORE PURPOSE</h1>
+												<h2 style="color:black">Be the most cost-saving International Brand Intelligence partner. (Save Client’s International team cost, International Office Expenses and Manage clients Brand).</h2>
+												<!-- <p><a class="btn btn-primary btn-learn">Learn More<i class="icon-arrow-right3"></i></a></p> -->
+											</div>
+					   				</div>
+					   			</div>
+					   		</div>
+				   		</div>
+				   	</li>
+					<li style="background-image: url(images/car-1.jpg);filter:grayscale(100%);">
+				   		<div class="overlay"></div>
+				   		<div class="container-fluid">
+				   			<div class="row">
+					   			<div class="col-md-8 col-md-offset-4 col-md-pull-2 js-fullheight slider-text">
+					   				<div class="slider-text-inner">
+					   					<div class="desc">
+						   					<h1 style="color:black">VALUES</h1>
+												<h2 style="color:black">Every small help makes Client's Brand Globally.</h2>
+												<!-- <p><a class="btn btn-primary btn-learn">Learn More<i class="icon-arrow-right3"></i></a></p> -->
+											</div>
+					   				</div>
+					   			</div>
+					   		</div>
+				   		</div>
+				   	</li>
+				  	</ul>
+			  	</div>
+			</aside>
+
+			<div class="colorlib-about">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="about-img animate-box" data-animate-effect="fadeInLeft" style="background-image: url(images/img_bg_2.jpg);">
+								<div class="about-img-2 animate-box" data-animate-effect="fadeInRight" style="background-image: url(images/img_bg_3.jpg);"></div>
+							</div>
+						</div>
+						<div style="margin-top:20px;" class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="about-desc">
+								<h3>About Us</h3>
+								<p><b><font style="font-size:20px;">IBI</font></b>-International Brand Intelligence is a leading firm with a Head office based in the United Kingdom, London along with distinctive presence internationally. The organisation is consisted of experienced professional management team with entirely new concept within the consumer goods industry to save international staff costs and international office expenses.</p>
+							</div>
+							<div class="fancy-collapse-panel">
+								<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+									<div class="panel panel-default">
+									    <div class="panel-heading" role="tab" id="headingOne">
+									        <h4 class="panel-title">
+									            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Why Choose IBI?
+									            </a>
+									        </h4>
+									    </div>
+									    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+									         <div class="panel-body">
+									            <div class="row">
+										      		<div class="col-md-6">
+										      			<p>We pride ourselves in offering complete customised international Brand Intelligence services and solutions to the UK & Ireland, Germany, GCC and Africa.</p>
+										      		</div>
+										      		<div class="col-md-6">
+										      			<p>Our team are trained and have to meet the benchmarks set by the organisation to ensure that they provide the best brand solutions for their brand to our clients.</p>
+										      		</div>
+										      	</div>
+									         </div>
+									    </div>
+									</div>
+									<div class="panel panel-default">
+									    <div class="panel-heading" role="tab" id="headingTwo">
+									        <h4 class="panel-title">
+									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">What We Do?
+									            </a>
+									        </h4>
+									    </div>
+									    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+									        <div class="panel-body">
+									            <p>We are available for advising and guiding our clients throughout the process of <strong>new brand development</strong> in their desired market, aswell as <strong>existing brand development</strong> by re-engineering in the market. We have a team of dedicated professionals working in their areas of expertise with a positive attitude. We take great pride in our staff and have a wonderful team of professionals working for us.</p>
+													<ul>
+														<li>New Brand Development Globally</li>
+														<li>Exisitng Brand Development Globally</li>
+													</ul>
+									        </div>
+									    </div>
+									</div>
+									<div class="panel panel-default">
+									    <div class="panel-heading" role="tab" id="headingThree">
+									        <h4 class="panel-title">
+									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Our Specialties
+									            </a>
+									        </h4>
+									    </div>
+									    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+									        <div class="panel-body">
+									            <p>We are interface between the client and the international market.  We are here to <strong>provide the best solution and great services for clients to transform their local brand into an international brand</strong> and increase the existing brand’s market share and profitability by using our entirely unique concepts to save international team costs by hiring our services for us to manage their brand awareness internationally and use our International offices as representative offices to save international office expenses.</p>	
+									        </div>
+									    </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="colorlib-services">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3">
+							<h2 class="colorlib-heading animate-box" data-animate-effect="fadeInRight">OUR SERVICES</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="colorlib-feature animate-box" data-animate-effect="fadeInLeft">
+								<div class="colorlib-icon">
+									<i class="fas fa-paper-plane"></i>
+								</div>
+								<div class="colorlib-text">
+									<a><h3>New Brand Launch</h3>
+									<p>New Brand launch is the process of creating a professional services brand where none currently exists. Since you are starting from scratch, you have a unique opportunity to choose your organisation position in the international market, which distributor, retail partners, customers and which consumers are right for your product as you offered. It is the perfect time to develop a compelling value proposition and brand development with us.</p>
+								</a></div>
+							</div>
+
+							<div class="colorlib-feature animate-box" data-animate-effect="fadeInLeft">
+								<div class="colorlib-icon">
+									<i class="fas fa-globe"></i>
+								</div>
+								<div class="colorlib-text">
+									<a><h3>Private Label Business Development</h3>
+									<p>Private-label products are typically those manufactured or provided by one company for offer under another company's brand. It is the best time to increase private label business and increase your business internationally by choosing our private label customers network.</p>
+								</a></div>
+							</div>
+
+							<div class="colorlib-feature animate-box" data-animate-effect="fadeInLeft">
+								<div class="colorlib-icon">
+									<i class="fas fa-building"></i>
+								</div>
+								<div class="colorlib-text">
+									<a><h3>International Representative Office</h3>
+									<p>An office opened in a foreign market as a first step for establishing a relationship with potential buyers or sellers. It will allow a company to show its commitment to the new market. It is the right time for our clients to make us their representative in the international market and take the opportunity from us to use our international offices as a representative office to save office expenses and showcase on your business website as Partner.</p>
+								</a></div>
+							</div>
+							<div class="colorlib-feature animate-box" data-animate-effect="fadeInLeft">
+								<div class="colorlib-icon">
+									<i class="fas fa-sitemap"></i>
+								</div>
+								<div class="colorlib-text">
+									<a><h3>Strong Distribution Network</h3>
+									<p>A distribution network is an interconnected group of storage facilities and transportation systems that receive inventories of goods and then deliver them to customers. It is an intermediate point to get products from the manufacturer to the end customer. It is the best time to choose us to find the right distributor partner for your brand who will not only sell but also take care as well with us.</p>
+								</a></div>
+							</div>
+							<div class="colorlib-feature animate-box" data-animate-effect="fadeInLeft">
+								<div class="colorlib-icon">
+									<i class="fas fa-recycle"></i>
+								</div>
+								<div class="colorlib-text">
+									<a><h3>Product Life Cycle</h3>
+									<p>Product life cycle is the progression of an item through the four stages of its time on the market. The four life cycle stages are Introduction, Growth, Maturity and Decline. Every product has a life cycle and time spent at each stage which differs from product to product. As your brand is representing your company shapes and structure. Your goodwill is depending on brand image and positioning. It is important in timing when to choose our value-added product lifecycle service to get a full understanding of your brand stages.</p>
+								</a></div>
+							</div>
+							<div class="colorlib-feature animate-box" data-animate-effect="fadeInLeft">
+								<div class="colorlib-icon">
+									<i class="fas fa-share-square"></i>
+								</div>
+								<div class="colorlib-text">
+									<a><h3>Brand Activation</h3>
+									<p>Brand Activation is the art of driving consumer action through brand interaction and experiences. In simple terms, the key aim of these sorts of campaigns is to get consumers to act. It's about bringing brands to life via experiences and forming long-term emotional connections through Above the Line (ATL) and Below the Line (BTL). Above the Line (ATL) advertising is where mass media is used to promote brands and reach out to the target consumers. These include conventional media as we know it, television and radio advertising, print as well as the internet.  Below the line (BTL) advertising is more one to one and involves the distribution of pamphlets, handbills, stickers, promotions, brochures placed at the point of sale, on the roads through banners and placards. It could also involve product demos and samplings at busy places like malls and marketplaces or residential complexes.  We will help our clients to find the most appropriate and necessary ATL & and/or BTL activation agencies for brand activation in desired countries where we have reach and monitor activities on behalf of our valuable clients.</p>
+								</a></div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="colorlib-feature animate-box" data-animate-effect="fadeInRight">
+								<div class="colorlib-icon">
+									<i class="fas fa-bullhorn"></i>
+								</div>
+								<div class="colorlib-text">
+									<a><h3>Existing Brand Development</h3>
+									<p>The Existing Brand development is the process to identify the performance in a market, compared with its average performance amongst all markets. It measures the relative sales strength of a brand and share contribution within a specific market and the opportunity for the international market. It is the ideal time to increase your existing brand sales and build market share with us.</p>
+								<a></div>
+							</div>
+
+							<div class="colorlib-feature animate-box" data-animate-effect="fadeInRight">
+								<div class="colorlib-icon">
+									<i class="icon-chart-bar"></i>
+								</div>
+								<div class="colorlib-text">
+									<a><h3>Brand Intelligence</h3>
+									<p>Brand intelligence is the system to provide parameters to control the expenses for business, from launching stage to maintain their brand name and monitor brand growth in the market. It is the right time to choose our Brand Intelligence services to maintain budget, control expenses and increase market growth.</p>
+								</a></div>
+							</div>
+
+							<div class="colorlib-feature animate-box" data-animate-effect="fadeInRight">
+								<div class="colorlib-icon">
+									<i class="icon-briefcase"></i>
+								</div>
+								<div class="colorlib-text">
+									<a><h3>International Staff Management</h3>
+									<p>International Business development staff is the company’s employee who is managing the brand in the international market. International staff management is the most difficult part as no physical office is in the specific market and their salary and benefits also are a big challenge. It is the fit time to choose our International staff management services and save costs.</p>
+								</a></div>
+							</div>
+							<div class="colorlib-feature animate-box" data-animate-effect="fadeInRight">
+								<div class="colorlib-icon">
+									<i class="fas fa-clipboard"></i>
+								</div>
+								<div class="colorlib-text">
+									<a><h3>International Marketing Plan</h3>
+									<p>A marketing plan is a business document outlining your marketing strategy and tactics. It's often focused on a specific period and covers a variety of marketing-related details, such as costs, goals, and action steps. But like your business plan, a marketing plan is not a static document. It needs to change and evolve as your business grows, and as new and changing marketing trends develop. 
+									We have experienced and professional experts who understands the market and know how to drive your brand.   it is a wonderful time to choose our expertise to grow your business with us.
+									</p></a>
+								</div>
+							</div>
+							<div class="colorlib-feature animate-box" data-animate-effect="fadeInRight">
+								<div class="colorlib-icon">
+									<i class="fas fa-tasks"></i>
+								</div>
+								<div class="colorlib-text">
+									<a><h3>Creative Brand Management</h3>
+									<p id="link">Creativity as an outcome has been defined primarily in brand management as the generation of ideas, solutions, or processes that are novel and useful. If you are invested in improving your company's visibility and market position, creative brand management is a term you need to understand. In essence, it refers to a process designed to ensure that your brand is accurately represented to target audiences and increase the brand share in the market. It is the adequate time to develop your creative brand website, creative brand packaging design, creative POSM and creative brand guidelines. </p>
+								</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+			<div style="margin-top:100px;" class="colorlib-blog">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-4 col-md-offset-3 col-md-pull-3">
+							<h2 class="colorlib-heading animate-box" data-animate-effect="fadeInLeft">Our Reach</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-2 col-sm-4 animate-box" data-animate-effect="fadeInLeft">
+							<div class="blog-entry">
+								<img style="border:1px solid black;height:100px;width:200px;border-radius:2%;" src="images/Flags/gb.png" class="img-responsive" alt="flag">
+								<div style="margin-top:20px;margin-bottom:-40px;" class="desc">
+									<center><h3>United Kingdom</h3><center>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-2 col-sm-4 animate-box" data-animate-effect="fadeInLeft">
+							<div class="blog-entry">
+								<img style="border:1px solid black;height:100px;width:200px;border-radius:2%;" src="images/Flags/ie.png" class="img-responsive" alt="flag">
+								<div style="margin-top:20px;margin-bottom:-40px;" class="desc">
+									<center><h3>Ireland</h3><center>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-2 col-sm-4 animate-box" data-animate-effect="fadeInLeft">
+							<div class="blog-entry">
+								<img style="border:1px solid black;height:100px;width:200px;border-radius:2%;" src="images/Flags/ae.png" class="img-responsive" alt="flag">
+								<div style="margin-top:20px;margin-bottom:-40px;" class="desc">
+									<center><h3>United Arab Emirates</h3><center>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-2 col-sm-4 animate-box" data-animate-effect="fadeInLeft">
+							<div class="blog-entry">
+								<img style="border:1px solid black;height:100px;width:200px;border-radius:2%;" src="images/Flags/sa.png" class="img-responsive" alt="flag">
+								<div style="margin-top:20px;margin-bottom:-40px;" class="desc">
+									<center><h3>Saudi Arabia</h3><center>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-2 col-sm-4 animate-box" data-animate-effect="fadeInLeft">
+							<div class="blog-entry">
+								<img style="border:1px solid black;height:100px;width:200px;border-radius:2%;" src="images/Flags/qa.png" class="img-responsive" alt="flag">
+								<div style="margin-top:20px;margin-bottom:-40px;" class="desc">
+									<center><h3>Qatar</h3><center>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-2 col-sm-4 animate-box" data-animate-effect="fadeInRight">
+							<div class="blog-entry">
+								<img style="border:1px solid black;height:100px;width:200px;border-radius:2%;" src="images/Flags/om.png" class="img-responsive" alt="flag">
+								<div style="margin-top:20px;margin-bottom:-40px;" class="desc">
+									<center><h3>Oman</h3><center>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-2 col-sm-4 animate-box" data-animate-effect="fadeInRight">
+							<div class="blog-entry">
+								<img style="border:1px solid black;height:100px;width:200px;border-radius:2%;" src="images/Flags/bh.png" class="img-responsive" alt="flag">
+								<div style="margin-top:20px;margin-bottom:-40px;" class="desc">
+									<center><h3>Bahrain</h3><center>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-2 col-sm-4 animate-box" data-animate-effect="fadeInRight">
+							<div class="blog-entry">
+								<img style="border:1px solid black;height:100px;width:200px;border-radius:2%;" src="images/Flags/kw.png" class="img-responsive" alt="flag">
+								<div style="margin-top:20px;margin-bottom:-40px;" class="desc">
+									<center><h3>Kuwait</h3><center>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-2 col-sm-4 animate-box" data-animate-effect="fadeInRight">
+							<div class="blog-entry">
+								<img style="border:1px solid black;height:100px;width:200px;border-radius:2%;" src="images/Flags/pk.png" class="img-responsive" alt="flag">
+								<div style="margin-top:20px;margin-bottom:-40px;" class="desc">
+									<center><h3>Pakistan</h3><center>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-2 col-sm-4 animate-box" data-animate-effect="fadeInRight">
+							<div class="blog-entry">
+								<img style="border:1px solid black;height:100px;width:200px;border-radius:2%;" src="images/Flags/ke.png" class="img-responsive" alt="flag">
+								<div style="margin-top:20px;margin-bottom:-40px;" class="desc">
+									<center><h3>Kenya</h3><center>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-2 col-sm-4 animate-box" data-animate-effect="fadeInLeft">
+							<div class="blog-entry">
+								<img style="border:1px solid black;height:100px;width:200px;border-radius:2%;" src="images/Flags/tz.png" class="img-responsive" alt="flag">
+								<div style="margin-top:30px;" class="desc">
+									<center><h3>Tanzania</h3><center>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-2 col-sm-4 animate-box" data-animate-effect="fadeInLeft">
+							<div class="blog-entry">
+								<img style="border:1px solid black;height:100px;width:200px;border-radius:2%;" src="images/Flags/sc.png" class="img-responsive" alt="flag">
+								<div style="margin-top:30px;" class="desc">
+									<center><h3>Seychelles</h3><center>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-2 col-sm-4 animate-box" data-animate-effect="fadeInLeft">
+							<div class="blog-entry">
+								<img style="border:1px solid black;height:100px;width:200px;border-radius:2%;" src="images/Flags/mu.png" class="img-responsive" alt="flag">
+								<div style="margin-top:30px;" class="desc">
+									<center><h3>Mauritius</h3><center>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<!-- <div class="colorlib-work">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3">
+							<span class="heading-meta">My Work</span>
+							<h2 class="colorlib-heading animate-box" data-animate-effect="fadeInLeft">Recent Work</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="project" style="background-image: url(images/work-1.jpg);">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="work.html">Work 01</a></h3>
+										<span>Branding, Ilustration</span>
+										<p class="icon">
+											<span><a href="#"><i class="icon-share3"></i></a></span>
+											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
+											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="project" style="background-image: url(images/work-2.jpg);">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="work.html">Work 02</a></h3>
+										<span>Logo, Web, Branding</span>
+										<p class="icon">
+											<span><a href="#"><i class="icon-share3"></i></a></span>
+											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
+											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="project" style="background-image: url(images/work-3.jpg);">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="work.html">Work 03</a></h3>
+										<span>Illustration, Logo</span>
+										<p class="icon">
+											<span><a href="#"><i class="icon-share3"></i></a></span>
+											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
+											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="project" style="background-image: url(images/work-4.jpg);">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="work.html">Work 04</a></h3>
+										<span>Web, Logo, Branding</span>
+										<p class="icon">
+											<span><a href="#"><i class="icon-share3"></i></a></span>
+											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
+											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="project" style="background-image: url(images/work-5.jpg);">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="work.html">Work 05</a></h3>
+										<span>Illustration, Logo</span>
+										<p class="icon">
+											<span><a href="#"><i class="icon-share3"></i></a></span>
+											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
+											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="project" style="background-image: url(images/work-6.jpg);">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="work.html">Work 06</a></h3>
+										<span>Web, Logo, Branding</span>
+										<p class="icon">
+											<span><a href="#"><i class="icon-share3"></i></a></span>
+											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
+											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="colorlib-blog">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3">
+							<span class="heading-meta">Read</span>
+							<h2 class="colorlib-heading animate-box" data-animate-effect="fadeInLeft">Recent Blog</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="blog-entry">
+								<a href="blog.html" class="blog-img"><img src="images/img-1.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
+								<div class="desc">
+									<span><small>Feb 07, 2018 </small> | <small> Web Design </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
+									<h3><a href="blog.html">18 Awesome sites</a></h3>
+									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+									<a href="blog.html" class="lead">Read More <i class="icon-arrow-right3"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="blog-entry">
+								<a href="blog.html" class="blog-img"><img src="images/img-2.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
+								<div class="desc">
+									<span><small>Feb 07, 2018 </small> | <small> Web Design </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
+									<h3><a href="blog.html">Wordpress for a Beginner</a></h3>
+									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+									<a href="blog.html" class="lead">Read More <i class="icon-arrow-right3"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="blog-entry">
+								<a href="blog.html" class="blog-img"><img src="images/img-3.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
+								<div class="desc">
+									<span><small>Feb 07, 2018 </small> | <small> Inspiration </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
+									<h3><a href="blog.html">Make website from scratch</a></h3>
+									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+									<a href="blog.html" class="lead">Read More <i class="icon-arrow-right3"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> -->
+
+			<div style="margin-bottom:-270px;margin-top:70px;" id="get-in-touch" class="colorlib-bg-color">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<h2>Get in Touch!</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<p class="colorlib-lead">Have Queries? We would love to hear from You!</p>
+							<p><a href="contact.html" class="btn btn-primary btn-learn">Contact Us</a></p>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- Sticky Kit -->
+	<script src="js/sticky-kit.min.js"></script>
+	
+	
+	<!-- MAIN JS -->
+	<script src="js/main.js"></script>
+	
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46156385-1', 'cssscript.com');
+  ga('send', 'pageview');
+
+</script>
+
+<script>
+  window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
+</script>
+
+</body>
+</html>
