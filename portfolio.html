@@ -1,0 +1,296 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>IBI-International Brand Intelligence</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+
+  <!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<link href="https://www.cssscript.com/wp-includes/css/sticky.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="images/favicon.png">
+
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	<style>
+	::-webkit-scrollbar { 
+    display: none; 
+}
+
+#menu {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 31%;
+    top: 65%;
+    list-style: none;
+    font-size: 200%;
+}
+
+.menu-button {
+    opacity: 0;
+    z-index: -1;
+}
+
+.menu-button {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 50%;
+    background: #0013FF;;
+    background-size: 100%;
+    overflow: hidden;
+    text-decoration: none;
+    line-height: 0px;
+	padding:8px;
+    color: #fff;
+	border:2px solid #FFB600;
+}
+
+.menu-button:hover{
+	color: #FFB600;
+}
+
+#menu:not(:target)>a:first-of-type,
+#menu:target>a:last-of-type {
+    opacity: 1;
+    z-index: 1;
+}
+
+#menu:not(:target)>.icon-plus:before,
+#menu:target>.icon-minus:before {
+    opacity: 1;
+}
+
+.menu-item {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    line-height: 0px;
+    top: 50%;
+    border-radius: 50%;
+    background-color: #0013FF;
+	border:2px solid #FFB600;
+    transform: translate(0px, 0px);
+    transition: transform 500ms;
+    z-index: -2;
+    transition: .5s;
+}
+
+.menu-item:hover{
+opacity: 0.5;
+  box-shadow: 0 5px 10px #0013FF;
+}
+
+
+.menu-item a {
+     color: #FFB600;
+    position: relative;
+    top: 20%;
+    left: 19%;
+    text-decoration: none;
+}
+
+#menu:target>.menu-item:nth-child(6) {
+    transform: rotate(60deg) translateY(-80px) rotate(300deg);
+    transition-delay: 0s;
+}
+
+#menu:target>.menu-item:nth-child(5) {
+    transform: rotate(20deg) translateY(-85px) rotate(-20deg);
+    transition-delay: 0.1s;
+}
+
+#menu:target>.menu-item:nth-child(3) {
+    transform: rotate(-20deg) translateY(-85px) rotate(20deg);
+    transition-delay: 0.2s;
+}
+
+#menu:target>.menu-item:nth-child(4) {
+    transform: rotate(-60deg) translateY(-80px) rotate(60deg);
+    transition-delay: 0.3s;
+}
+
+.content{
+  position: absolute;
+  text-align: center;
+  margin: -10px 0 0 -30px;
+  top: 70%;
+  left: 50%;
+  font-size: 20px;
+}
+	</style>
+	
+	</head>
+	<body>
+	<div id="colorlib-page">
+		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+		<aside id="colorlib-aside" style="background-color:#F4F6F6;" role="complementary" class="border js-fullheight">
+			<a href="index.html"><img style="width:100%;image-rendering: crisp-edges;margin-bottom:30px;" src="images/logo_final.png"/></a>
+			<nav id="colorlib-main-menu" role="navigation">
+				<ul>
+					<li><a href="index.html"><span class="fas fa-arrow-left"></span> Back to IBI</a></li>
+				</ul>
+			</nav>
+			
+			<div class="container">
+     <ul id="menu">
+            <a class="menu-button" href="#menu" title="Expand Sharing "><span class="fas fa-share-alt"></span></a>
+            <a style="color:#FFB600;" class="menu-button" href="#0" title="Contract Sharing"><span class="fas fa-share-alt"></span></a>
+            <li class="menu-item">
+                <a href="#menu" title="Facebook">
+                    <span class="fab fa-facebook"></span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="#menu" title="Twitter">
+                    <span class="fab fa-twitter"></span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="#menu" title="Pinterest">
+                    <span class="fab fa-pinterest"></span>
+                </a>
+            </li>
+			<li class="menu-item">
+                <a href="#menu" title="Google Plus">
+                    <span class="fab fa-google-plus"></span>
+                </a>
+            </li>
+        </ul>
+
+</div>
+
+			<div class="colorlib-footer">
+				<p><small><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved to <font style="color:#A93226;font-weight:bold;">International Brand Intelligence.</font> Designed by <a href="#link">IBI Creative.</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. </span> <span>Demo Images: <a href="http://nothingtochance.co/" target="_blank">nothingtochance.co</a></span> --> </small></p>
+				<!-- <ul>
+					<li><a href="#"><i class="icon-facebook2"></i></a></li>
+					<li><a href="#"><i class="icon-twitter2"></i></a></li>
+					<li><a href="#"><i class="icon-instagram"></i></a></li>
+					<li><a href="#"><i class="icon-linkedin2"></i></a></li>
+				</ul> -->
+			</div>
+
+		</aside>
+
+
+		<div id="colorlib-main">
+			<div class="colorlib-work">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3">
+							<h2 class="colorlib-heading animate-box" data-animate-effect="fadeInLeft">IBI Creative Portfolio</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="project" style="background-image: url(images/work-1.jpg);">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="#">Wapinter Bounty Portal</a></h3>
+										<span>Web Development</span>
+										<p class="icon">
+											<span><a href="#"><i class="fab fa-linkedin"></i></a></span>
+											<span><a href="#"><i class="fab fa-facebook"></i></a></span>
+											<span><a href="#"><i class="fas fa-link"></i></a></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="project" style="background-image: url(images/work-2.jpg);">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="work.html"></a></h3>
+										<span>Logo, Web, Branding</span>
+										<p class="icon">
+											<span><a href="#"><i class="icon-share3"></i></a></span>
+											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
+											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="get-in-touch" class="colorlib-bg-color">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<h2>Get in Touch!</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<p class="colorlib-lead">Have Queries? We would love to hear from You!</p>
+							<p><a href="contact.html" class="btn btn-primary btn-learn">Contact Us</a></p>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- Sticky Kit -->
+	<script src="js/sticky-kit.min.js"></script>
+	
+	
+	<!-- MAIN JS -->
+	<script src="js/main.js"></script>
+
+	</body>
+</html>
